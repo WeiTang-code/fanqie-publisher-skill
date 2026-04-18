@@ -62,7 +62,7 @@ def parse_chapter(path: Path) -> Dict:
 
 
 def collect(directory: Path) -> List[Dict]:
-    files = sorted([p for p in directory.iterdir() if p.is_file() and p.suffix.lower() == ".md"])
+    files = sorted([p for p in directory.iterdir() if p.is_file() and p.suffix.lower() in [".md", ".txt"]])
     chapters: List[Dict] = []
     for p in files:
         try:

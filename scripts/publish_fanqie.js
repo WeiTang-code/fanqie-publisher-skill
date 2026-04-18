@@ -5,8 +5,8 @@ const { spawnSync } = require('child_process');
 const { ensureDir, ensureLoggedIn } = require('./fanqie_login_flow');
 const { resolvePage } = require('./browser_page_picker');
 
-const BOOK_ID = '7616021706989128728';
-const BOOK_NAME = '末日倒计时：开局强行绑定救世主';
+const BOOK_ID = '7629023807054826521';
+const BOOK_NAME = '外门崛起';
 const DRAFT_URL = `https://fanqienovel.com/main/writer/${BOOK_ID}/publish/?enter_from=newchapter_0`;
 const CHAPTER_MANAGE_URL = `https://fanqienovel.com/main/writer/chapter-manage/${BOOK_ID}&${encodeURIComponent(BOOK_NAME)}?type=1`;
 const DEFAULT_DAILY_LIMIT_CHARS = 50000; // inferred from real Fanqie backend behavior; treat as a safety guard, not an official documented rule.
